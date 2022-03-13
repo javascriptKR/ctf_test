@@ -1,0 +1,8 @@
+version: "3"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: ./prob/Dockerfile
+    ports:
+      - 44587:44587

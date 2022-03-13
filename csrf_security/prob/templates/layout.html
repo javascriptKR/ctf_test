@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+</head>
+<body>
+    <div class="jumbo">
+        <h2>CSRF</h2>
+        {% if session['userid'] %}
+            <h4>{{ userid }}님 안녕하세요. admin 계정이 아닙니다. (다시 하세요!)</h4>
+            <button type="button" onclick="location.href='/logout' ">로그 아웃</button>
+        {% else %}
+            <h4>Hello!</h4>
+            <button type="button" onclick="location.href='/register' ">등록하기</button>
+            <button type="button" onclick="location.href='/login' ">로그인</button>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -46,10 +46,15 @@ def check_csrf(param, cookie={"name": "name", "value": "value"}):
     url = f"http://127.0.0.1:8000/vuln?param={urllib.parse.quote(param)}"
     return read_url(url, cookie)
 
-@app.route('/flag', method=["GET", "POST"])
-def flag():
+@app.route('/vuln')
+def vuln():
+    return 
+
+
+@app.route('/email', method=["GET", "POST"])
+def email():
     if request.method == "GET":
-        return render_template("flag.html")
+        return render_template("email.html")
     elif request.method == "POST":
         param = request.form.get("param", "")
         if not check_csrf(param):

@@ -18,7 +18,7 @@
 						if(isset($_POST['Sign'])){
 							$comm = trim($_POST['comment']);
 
-							$comm = preg_replace('/<(.*)s(.*)c(.*)r(.*)i(.*)p(.*)t/i', '', $comm);
+							$comm = preg_replace('/<(.*)s(.*)c(.*)r(.*)i(.*)p(.*)t|o(.*)n/i', '', $comm);
 							
 							echo "입력한 값: ".$comm;
 						}

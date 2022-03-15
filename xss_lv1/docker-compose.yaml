@@ -1,0 +1,8 @@
+version: "3"
+services:
+  web-robots:
+    build:
+      context: .
+      dockerfile: ./prob/Dockerfile
+    ports:
+      - 3152:80

@@ -1,0 +1,11 @@
+.good {
+    caret-color: #10b981;
+  }
+  
+  .warning {
+    caret-color: #FCD34D;
+  }
+  
+  .danger {
+    caret-color: red;
+  }

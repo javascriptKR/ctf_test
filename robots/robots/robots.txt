@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /nobody_robot_flag

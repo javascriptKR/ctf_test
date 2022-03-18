@@ -14,19 +14,17 @@ except:
 def index():
     return render_template("index.html")
 
-@app.route('/email')
-def email():
-    return render_template("email.html")
-
-memo_text = ""
+@app.route('/contact', methods=['GET','POST'])
+def contact():
+    if request.method == 'POST':
+        global value
+        value = request.form['comment']
+        print(value)
+    return render_template("contact.html")
 
 @app.route('/memo')
 def memo():
-    global memo_text
-    text = request.args.get("memo", None)
-    if text:
-        memo_text += text
-    return render_template("memo.html", memo=memo_text)
+    return render_template("memo.html", memo=value)
 
 if __name__ == '__main__':
     app.run(debug=True)

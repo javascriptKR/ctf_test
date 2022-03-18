@@ -1,0 +1,8 @@
+version: "3"
+services:
+  web-robots:
+    build:
+      context: .
+      dockerfile: ./robots/Dockerfile
+    ports:
+      - 1180:80

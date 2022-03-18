@@ -1,0 +1,27 @@
+<html lang="en">
+    <head>
+        <title>CSRF</title>
+        <style type="text/css">* {cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1162.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1162.png), auto !important;}</style>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.6/tailwind.min.css">
+    </head>
+    <body>
+        <div class="flex items-center justify-center h-screen bg-gray-200">
+            <div class="bg-white rounded-lg border shadow-lg p-4 w-1/3">
+				<a href="/">index</a>
+                 | 
+                <a href="/memo">memo</a>
+                <hr>
+                <br>
+                <form method="POST">
+					<p class='text-gray-400 text-sm p-0 m-0'>파라미터를 변조하는 email을 보내서 flag.txt를 받으세요.</p><br>
+                    <legend>Contact</legend>
+                    <input type="text" name='email' style="height:30px" class='bg-gray-200 p-1 h-20 w-full mt-0 good' placeholder="Your email"></input><br><br>
+
+                    <label class='text-gray-800 font-regular'>Comment</label>
+					<textarea name='comment' class='bg-gray-200 p-1 h-20 w-full mt-0 good'></textarea>
+					<input name="Sign" style="margin-top: 10; width:100%; border-radius: 10px; background-color:#d6f1ff;" type="submit" value="보내기"/>
+				</form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -10,13 +10,13 @@
                 <a href="/">index</a>
                  | 
                 <a href="/contact">contact</a>
+                | 
+                <a href="/profile">profile</a>
                 <hr>
                 <br>
-				<form method="POST">
-					<label class='text-gray-800 font-regular'>Memo</label>
-					<p class='text-gray-400 text-sm p-0 m-0'>contact 페이지에서 보낸 mail 답장</p>
-					<text name='comment' class='bg-gray-200 p-1 h-20 w-full mt-0 good'>{{memo}}</text>
-				</form>
+                <div>
+                    {{text|safe}}
+                </div>
             </div>
         </div>
     </body>

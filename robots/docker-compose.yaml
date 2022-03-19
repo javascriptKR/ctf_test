@@ -3,6 +3,6 @@ services:
   web-robots:
     build:
       context: .
-      dockerfile: ./robots/Dockerfile
+      dockerfile: ./prob/Dockerfile
     ports:
       - 1180:80

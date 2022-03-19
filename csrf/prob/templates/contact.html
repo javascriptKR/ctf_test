@@ -9,18 +9,23 @@
             <div class="bg-white rounded-lg border shadow-lg p-4 w-1/3">
 				<a href="/">index</a>
                  | 
-                <a href="/memo">memo</a>
+                 <a href="/profile">profile</a>
+                 | 
+                 <a href="/private">private</a>
                 <hr>
                 <br>
-                <form method="POST">
+                <form method="POST" action="?action=contact">
 					<p class='text-gray-400 text-sm p-0 m-0'>파라미터를 변조하는 email을 보내서 flag.txt를 받으세요.</p><br>
                     <legend>Contact</legend>
-                    <input type="text" name='email' style="height:30px" class='bg-gray-200 p-1 h-20 w-full mt-0 good' placeholder="Your email"></input><br><br>
-
-                    <label class='text-gray-800 font-regular'>Comment</label>
+                    <input type="text" name='email' style="height:30px" class='bg-gray-200 p-1 h-20 w-full mt-0 good' placeholder="Your email"></input><br>
+                    <br>
+                    <legend>Comment</legend>
 					<textarea name='comment' class='bg-gray-200 p-1 h-20 w-full mt-0 good'></textarea>
-					<input name="Sign" style="margin-top: 10; width:100%; border-radius: 10px; background-color:#d6f1ff;" type="submit" value="보내기"/>
+					<input name="Sign" style="margin-top: 10; width:100%; border-radius: 10px; background-color:#d6f1ff;" type="submit" value="Submit"/>
 				</form>
+                {% if value != null %}
+                    <p>{{value}}</p>
+                {% endif %}
             </div>
         </div>
     </body>

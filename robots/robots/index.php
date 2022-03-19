@@ -1,6 +1,6 @@
 <html>
 	<head>
-		
+		<style type="text/css">* {cursor: url(https://ani.cursors-4u.net/toons/too-12/too1139.cur), auto !important;}</style>
 	</head>
 	<body>
 		<div style="text-align: center;">
